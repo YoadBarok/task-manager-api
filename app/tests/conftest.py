@@ -1,10 +1,5 @@
 from main import app
-from typing import AsyncIterator
-import httpx
 import pytest
-import pytest_asyncio
-from api.controllers import task_controller
-from api.controllers import user_controller
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
 from api.deps import get_db

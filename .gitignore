@@ -3,3 +3,4 @@ venv
 db.db
 test.db
 __pycache__
+.pytest_cache
