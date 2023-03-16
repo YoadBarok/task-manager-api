@@ -102,3 +102,4 @@ async def test_edit_task(client: httpx.AsyncClient, override_get_db):
     # Remove the test user and task
     task_controller.remove_task(task_id, override_get_db)
     user_controller.remove_user(override_get_db, user_id)
+
