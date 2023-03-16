@@ -1,9 +1,9 @@
-from api.repositories import task_repository
-from sqlalchemy.orm import Session
-from schemas.response import Response
-from schemas.task import RequestTask
 from fastapi import HTTPException
-from api.repositories import user_repository
+from sqlalchemy.orm import Session
+from src.app.api.repositories import task_repository
+from src.app.schemas.response import Response
+from src.app.schemas.task import RequestTask
+from src.app.api.repositories import user_repository
 
 
 def get_all_tasks(db: Session):

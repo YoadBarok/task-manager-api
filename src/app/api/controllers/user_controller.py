@@ -1,6 +1,6 @@
-from api.repositories import user_repository
 from sqlalchemy.orm import Session
-from schemas.user import RequestUser
+from src.app.api.repositories import user_repository
+from src.app.schemas.user import RequestUser
 
 
 def get_all_users(db: Session):

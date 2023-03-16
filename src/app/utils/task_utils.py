@@ -1,6 +1,6 @@
 from asyncio import sleep
-from models.task import Task
-from schemas.task import JobState
+from src.app.models.task import Task
+from src.app.schemas.task import JobState
 from sqlalchemy.orm import Session
 from random import randint
 

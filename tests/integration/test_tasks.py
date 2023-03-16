@@ -1,10 +1,10 @@
-from main import app
+from src.main import app
 from typing import AsyncIterator
 import httpx
 import pytest
 import pytest_asyncio
-from api.controllers import task_controller
-from api.controllers import user_controller
+from src.app.api.controllers import task_controller
+from src.app.api.controllers import user_controller
 
 
 @pytest_asyncio.fixture()

@@ -1,8 +1,8 @@
 from sqlalchemy.orm import Session, joinedload
-from schemas.task import JobState
-from models.task import Task
-from schemas.task import Task as TaskSchema
-from utils.task_utils import convert_job_state, process_task
+from src.app.schemas.task import JobState
+from src.app.models.task import Task
+from src.app.schemas.task import Task as TaskSchema
+from src.app.utils.task_utils import convert_job_state, process_task
 import uuid
 import asyncio
 
