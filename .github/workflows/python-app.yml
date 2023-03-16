@@ -13,6 +13,10 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
+    
+    env:
+      DB_URI: sqlite:///db.db
+      UI_URL: http://localhost:8000
 
     steps:
     - uses: actions/checkout@v3
