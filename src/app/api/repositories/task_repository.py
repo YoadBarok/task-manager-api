@@ -9,6 +9,8 @@ import asyncio
 
 def find_all_tasks(db: Session):
     all_tasks = db.query(Task).options(joinedload(Task.owner)).all()
+    # Because this implementation uses SQLite that doesn't have Enum columns, 
+    # we need to convert job_state to it's JobState.name
     result = [convert_job_state(task) for task in all_tasks]
     return result
 
