@@ -1,10 +1,10 @@
-from main import app
+from src.main import app
 import pytest
 from sqlalchemy.orm import sessionmaker
 from sqlalchemy import create_engine
-from api.deps import get_db
-from models.user import User
-from models.task import Task
+from src.app.api.deps import get_db
+from src.app.models.user import User
+from src.app.models.task import Task
 
 @pytest.fixture(scope="function")
 def override_get_db():

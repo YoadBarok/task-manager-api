@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-from models.user import User
+from src.app.models.user import User
 
 
 def seed_db(db: Session):

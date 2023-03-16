@@ -3,7 +3,7 @@ load_dotenv()
 from fastapi import FastAPI
 from os import environ
 from fastapi.middleware.cors import CORSMiddleware
-from api.api import api_router
+from src.app.api.api import api_router
 
 
 app = FastAPI()

@@ -1,9 +1,9 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from os import environ
-from models.task import Task
-from models.user import User
-from db.seed import seed_db
+from src.app.models.task import Task
+from src.app.models.user import User
+from src.app.db.seed import seed_db
 
 
 engine = create_engine(environ.get('DB_URI'), pool_pre_ping=True)

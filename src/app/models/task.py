@@ -1,6 +1,6 @@
 from sqlalchemy.orm import relationship, Mapped, mapped_column
 from sqlalchemy import Integer, String, DateTime, ForeignKey
-from db.base_class import Base
+from src.app.db.base_class import Base
 from datetime import datetime
 
 

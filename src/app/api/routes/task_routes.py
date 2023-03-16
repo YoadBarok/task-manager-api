@@ -1,9 +1,9 @@
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
-from api.deps import get_db
-from schemas.task import RequestTask
-from schemas.response import Response
-from api.controllers import task_controller
+from src.app.api.deps import get_db
+from src.app.schemas.task import RequestTask
+from src.app.schemas.response import Response
+from src.app.api.controllers import task_controller
 
 
 router = APIRouter()
