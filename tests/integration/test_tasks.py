@@ -45,7 +45,7 @@ async def test_create_task(client: httpx.AsyncClient, override_get_db):
     # Create the task
     task = {
         "task": {
-            "name": "Testing the tests Task",
+            "name": "Testing task creation",
             "owner_id": user_id,
         }
     }
