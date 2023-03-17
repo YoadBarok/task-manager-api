@@ -27,7 +27,7 @@ def create_task(request: RequestTask, db: Session):
     if not _user:
         raise HTTPException(status_code=400, detail="Cannot find a user with the provided owner_id")
     _task = task_repository.create_task(db, request.task)
-    return Response(code=201, status="Ok", message="Task created successfully", result=_task)
+    return Response(code=201, status="Created", message="Task created successfully", result=_task)
 
 
 def get_task_by_id(task_id: int, db: Session):
